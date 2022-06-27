@@ -859,9 +859,26 @@ nav{
     .footer-b .f-r-sec{
         display: none;
     }
-
-
-        
+     
+}
+@media (max-width:650px){
+    /* sec-1 영역 */
+    .sec-1 .right-content .b-box .m-txt br{
+        display: none;
+    }
+    .sec-1 .right-content .b-box .sub-txt br{
+        display: none;
+    }
+    /* sec-2 영역 */
+    .sec-2 .l-sec .left-content .m-txt{
+        font: 2rem;
+    }
+    .sec-2 .l-sec .left-content .m-txt br{
+        display: none;
+    }
+    .sec-2 .l-sec .left-content .sub-txt br{
+        display: none;
+    }
 }
 @media (max-width:500px){
     /* 베너영역 */
