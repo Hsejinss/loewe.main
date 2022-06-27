@@ -1,0 +1,870 @@
+@charset "utf-8";
+/* font-family: 'Source Serif Pro', serif; */
+/* font-family: 'Lato', sans-serif; */
+/* font-family: 'Open Sans', sans-serif; */
+
+/* 헤더영역 */
+#hamburger{
+    display: none;
+}
+.banner{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+/* header 영역 */
+.header-area{
+    display: flex;
+    padding: 80px 80px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    width: 100%;
+
+    transition: 0.3s;
+}
+.header-area.active{
+    padding: 30px 40px;
+    /* background-color: rgba(255, 255, 255, 0.7); */
+}
+.header-area .header-logo a{
+    display: inline-block;
+}
+
+.header-area .header-logo .ico-logo{
+    fill: #fff;
+    width: 190px;
+    height: 45px;
+}
+.header-area .header-logo .ico-logo.active{
+    fill: #222;
+    width: 140px;
+    height: 30px;
+}
+
+nav{
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* icon-box 영역 */
+.icon-box{
+    display: flex;
+    margin-right: -20px;
+}
+.icon-box li{
+    margin-right: 20px;
+}
+.icon-box a svg{
+    width: 28px;
+    height: 28px;
+    stroke-width: 5px;
+    stroke: #ffffff;
+}
+.icon-box .header-ico.active{
+    stroke: rgb(107, 107, 107);
+}
+/* nav 영역*/
+.menu{
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: -15px;
+    padding-left: 80px;
+}
+.menu li{
+    color: #fff;
+    margin-bottom: 15px;
+    font-weight: 5 00;
+    font-size: 1.125rem;
+
+}
+.menu li:hover a{
+    border-left: 3px solid #fff;
+    padding-left: 5px;
+    box-sizing: border-box;
+    
+    transition: 0.3s;
+}
+.menu a{
+    display: inline-block;
+}
+.title h1{
+    font-family: 'Source Serif Pro', serif;
+    font-size: 5.5rem;
+    color: #222;
+    font-weight: 400;
+}
+
+/* 배너 스와이퍼 영역 */
+.swiper{
+    overflow: visible !important;
+}
+.mask{
+    width: 100vw;
+    height: 100vh;
+    /* position: relative; */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.slider{
+    height: 100vh;
+    width: 100vw;
+    float: left;
+}
+.slider .in-slider.fi{
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/banner-img2-2880.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.slider .in-slider.se{
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/banner-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.slider .in-slider.th{
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/Paulas_women_hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.swiper, .swiper-wrapper{
+    z-index: 0 !important;
+}
+/* sec-1 영역 */
+.sec-1{
+    padding: 180px 200px 150px 300px;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+}
+.sec-1 .container{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.sec-1 .title{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 700px;
+}
+
+/* 공통 이미지 스타일링*/
+.sec-1 .img-box{
+    width: 450px;
+    height: 552px;
+
+    display: flex;
+}
+.sec-1 .img-box p{
+    writing-mode: vertical-rl;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+/* left 영역 */
+.sec-1 .left-content{
+    width: 50%;
+    /* float: left; */
+    position: absolute;
+}
+.sec-1 .left-content .b-box{
+    margin-top: 100px;
+}
+.sec-1 .left-content .b-box{
+    position: relative;
+}
+.sec-1 .b-box .img-box img{
+    z-index: 99;
+}
+/* 돌아가는 텍스트 영역 */
+.sec-1 .left-content .rotate-txt{
+    position: absolute;
+    top: 5%;
+    left: 45%;
+    transform: translate(-5%, -50%);
+}
+.sec-1 .left-content .rotate-txt img{
+    animation: rotate 15s linear infinite;
+}
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/* right 영역 */
+.sec-1 .right-content{
+    width: 50%;
+    /* float: right; */
+    display: flex;
+    justify-content: flex-start;
+    transform: translateX(100%);
+    flex-direction: column;
+}
+.sec-1 .right-content .b-box .m-txt{
+    margin-top: 85px;
+    font-size: 2.815rem;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 600;
+}
+.sec-1 .right-content .b-box .sub-txt{
+    font-size: 1.375rem;
+    font-family: 'Source Serif Pro', serif;
+    margin-top: 20px;
+}
+
+
+/* sec-2 영역 */
+.sec-2{
+    background-image: url(../img/sec-2-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 6.25%;
+    width: 100%;
+}
+.sec-2 .container{
+    width: 100%; 
+    display: flex;
+
+    padding: 80px 120px;
+    box-sizing: border-box;
+}
+
+/* left영역 */
+.l-sec{
+    width: 50%;
+}
+.sec-2 .left-content .m-txt{
+    font-size: 2.815rem;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 600;
+    color: #222;
+}
+.sec-2 .l-sec .left-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sec-2 .l-sec .left-content .l-txt{
+    padding-top: 100px;
+    box-sizing: border-box;
+}
+
+.sec-2 .left-content .sub-txt{
+    font-size: 1.5rem;
+    font-family: 'Source Serif Pro', serif;
+    margin-top: 15px;
+    color: #222;
+}
+.sec-2 .more-btn{
+    font-size: 1.125rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    color: #222;
+    
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 55px;
+}
+.sec-2 .more-btn .arrow-btn{
+    width: 40px;
+    height: 40px;
+    margin-left: 45px;
+}
+.sec-2 .more-btn:hover span{
+    border-bottom: 1px solid #222;
+}
+/* right영역 */
+.r-sec{
+    width: 50%;
+}
+.sec-2 .r-sec .img-sec{
+    width: 690px;
+    height: 690px;
+}
+
+
+/* sec-3 영역 */
+.sec-3{
+    background-image: url(../img/sec3-bg-pink.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    
+
+    transition: 1s;
+}
+.sec-3 .container{
+    padding: 280px 120px 80px 120px;
+    box-sizing: border-box;
+}
+
+.sec-3 .title h1{
+    font-size: 3.75rem;
+}
+.sec-3 .con-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+/* left영역 */
+.sec-3 .left-content{
+    width: 40%;
+    height: 790px;
+    position: relative;
+}
+.sec-3 .con-box .left-content li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    display: none;
+    transition: 0.5s;
+}
+.sec-3 .con-box .left-content li.active{
+    display: block;
+}
+.sec-3 .left-content .w-product{
+    position: absolute;
+    display: block;
+}
+
+/* left img영역 */
+.sec-3 .left-content li.pro-1{
+    background-image: url(../img/sec-3-w-product1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.sec-3 .left-content li.pro-2{
+    background-image: url(../img/sec-3-w-product2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.sec-3 .left-content li.pro-3{
+    background-image: url(../img/sec-3-w-product3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+/* right 영역 */
+.sec-3 .right-content{
+    overflow: hidden;
+    width: 60%;
+}
+
+/* 1. pagination bar 하단에 배치, detail영역을 slider로 만들고 상품 클릭했을 때 슬라이드 넘어가게끔 만들기 */
+/* 2. 버튼 클래스 이름 동일하게 지정 */
+
+/* pagination bar 초기화 */
+.swiper-horizontal>.swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal, .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite, .swiper-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite{
+    bottom: 0 !important;
+    /* top: 100% !important; */
+    top: auto !important;
+}
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+    background-color: #222 !important; 
+}
+.swiper-pagination-progressbar{
+    background-color: #f5f5f5 !important;
+}
+
+/* detail 영역 */
+.sec-3 .right-content .product-detail .detail-txt{
+    font-size: 1rem !important;
+    padding-bottom: 20px !important;
+    box-sizing: border-box !important;
+    background-color: #fff;
+    top: 40%;
+}
+.product-detail .detail-txt .p-name{
+    margin-bottom: 10px;
+    margin-top: 35px;
+    font-size: 1.125rem;
+}
+.product-detail .detail-txt span{
+    display: block;
+    font-size: 1rem;
+}
+.product-detail .detail-txt .button{
+    margin-top: 35px;
+}
+.product-detail .detail-txt .button a{
+    font-size: 0.875rem;
+    border-radius: 15px;
+    border: 1px solid #222;
+    padding: 3px 8px;
+    transition: 0.5s;
+}
+.product-detail .detail-txt .button:hover a{
+    border: 1px solid #222;
+    background-color: #222;
+    color: #fff;
+}
+
+.sec-3 .product-detail{
+    position: absolute;
+    height: 150px;
+    width: 100%;
+    bottom: 50px;
+}
+.sec-3 .product-detail .detail-box{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* display: none; */
+    /* display: block; */
+    transition: 0.3s;
+}
+.sec-3 .product-detail .detail-box .detail-txt.active{
+    display: block;
+}
+.sec-3 .product-detail .detail-txt{
+    position: absolute;
+    display: none;
+}
+
+
+
+
+
+
+/* 스와이퍼 버튼 초기화 */
+.swiper-button-prev::after, .swiper-rtl .swiper-button-next::after,
+.swiper-button-next::after, .swiper-rtl .swiper-button-prev::after{
+    /* color: #222 !important;
+    font-size: 1.375rem !important; */
+    display: none !important;
+}
+
+
+/* sec-4영역 */
+.sec-4 .container{
+    display: flex;
+}
+/* left영역 */
+.sec-4 .left-container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* right 영역 */
+.sec-4 .right-container{
+    width: 50%;
+    position: relative;
+}
+.sec-4 .p-txt-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.sec-4 .right-container .txt-box{
+    color: #fff;
+    text-align: center;
+}
+.sec-4 .txt-box .m-txt{
+    font-size: 1.562rem;
+    font-weight: 500;
+}
+.sec-4 .txt-box .sub-txt{
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+/* span에 호버시 이미지 확대 */
+.sec-4 .right-container .product{
+    overflow: hidden;
+}
+.sec-4 .right-container .product img{
+    transition: all 0.8s;
+}
+.sec-4 .right-container:hover img{
+    transform: scale(1.04);
+}
+.sec-4 .txt-box:hover span{
+    border-bottom: 2px solid #fff;
+}
+.sec-4 .txt-box span a{
+    font-size: 1rem;
+}
+
+/* 푸터영역 */
+
+.footer-t-i{
+    position: sticky;
+    top: 0;
+}
+/* f-bottom 영역 */
+.footer-b{
+    margin-top: 130px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+.footer-b .f-box{
+    text-align: center;
+    margin: 0 100px;
+}
+.footer-b .f-box .f-logo{
+    width: 85px;
+    height: 85px;
+}
+.footer-b .f-m-sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer-b .f-m-sec .f-logo{
+    margin-bottom: 30px;
+}
+.footer-b .f-r-sec{
+    display: flex;
+    text-align: left;
+}
+.footer-b .f-r-sec .f-left{
+    padding-right: 50px;
+    box-sizing: border-box;
+}
+
+/*bottom-left영역*/
+.footer .f-box input{
+    width: 100%;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #707070;
+    margin-top: 25px;
+}
+
+/*bottom-middle영역*/
+.f-m-sec .f-top{
+    display: flex;
+}
+.f-m-sec .f-top .f-menu{
+    margin-right: 10px;
+    border-right: 1px solid #222;
+    padding-right: 10px;
+}
+.footer-b .f-m-sec .f-top p{
+    margin-bottom: 5px;
+}
+/*bottom-right영역*/
+.footer .f-box p{
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+/* 미디어쿼리적용 */
+@media (max-width: 1800px){
+    /* sec-1영역 */
+    .sec-1{
+        padding: 180px 100px 120px 250px;
+    }
+    .sec-1 .title{
+        margin-left: 650px;
+    }
+}
+@media (max-width: 1700px){
+    /* sec-1영역 */
+    .sec-1 .title{
+        margin-left: 600px;
+    }
+    /* sec-2 영역 */
+    .sec-2 .l-sec{
+        margin-right: 30px;
+    }
+} 
+@media (max-width: 1500px){
+    /* sec-1영역 */
+    .sec-1 .title{
+        margin-left: 550px;
+    }
+    .sec-1 .left-content .rotate-txt{
+        left: 55%;
+    }
+    /* sec-3영역 */
+    .sec-3 .right-content .product-detail .detail-txt{
+        top: 0%;
+    }
+} 
+@media (max-width: 1300px){
+    /* sec-1영역 */
+    .sec-1{
+        padding: 150px 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    /* .sec-1 .container{
+        
+    } */
+    .sec-1 .container{
+        width: 100%;
+    }
+    .sec-1 .img-box{
+        width: 100%;
+        height: auto;
+
+
+        width: 800px;
+        height: auto;
+        margin: 0 auto;
+    }
+    .sec-1 .img-box{
+        width: 650px;
+        height: 800px;
+    }
+    .sec-1 .title{
+        width: 100%;
+        margin-left: 0;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+    }
+    .title h1{
+        font-size: 4.25rem;
+    }
+
+    .sec-1 .left-content{
+        width: 100%;
+        position: static;
+    }
+    .sec-1 .right-content{
+        width: 100%;
+        transform: translateX(0);
+        margin-top: 80px;
+    }
+    .sec-1 .right-content .b-box{
+        margin: 0 auto;
+    }
+    .sec-1 .right-content .b-box .m-txt{
+        margin-top: 70px;
+        font-size: 2.5rem;
+    }
+    .sec-1 .right-content .b-box .sub-txt{
+        font-size: 1.25rem;
+    }
+    .sec-1 .left-content .rotate-txt{
+        top: 2%;
+        left: 65%;
+    }
+    /* sec-2 영역 */
+    .sec-2 .left-content .m-txt{
+        font-size: 2.2rem;
+    }
+    .sec-2 .left-content .sub-txt{
+        font-size: 1.125rem;
+    }
+    .sec-2 .more-btn{
+        font-size: 1.1rem;
+    }
+    .sec-2 .l-sec .left-content .l-txt{
+        padding-top: 180px;
+    }
+
+    /* sec-3 영역 */
+    .sec-3 .left-content{
+        margin-right: 50px;
+    }
+    .sec-3 .right-content .product-detail .detail-txt{
+        top: -30%;
+    }
+} 
+
+@media (max-width:1200px){
+    /* sec-1 영역 */
+    .sec-1 .title{
+        margin-bottom: 30px;
+    }
+    /* sec-2 영역 */
+    .sec-2 .l-sec .left-content .l-txt{
+        margin-right: 15px;
+    }
+    /* sec-3 영역 */
+    .sec-3 .container{
+        padding: 0px 120px 220px 120px;
+    }
+    .sec-3 .right-content .product-detail .detail-txt{
+        top: 140%;
+    }
+    .sec-3 .con-box{
+        flex-direction: column;
+    }
+    .sec-3 .left-content{
+        width: 100%;
+        height: 600px;
+    }
+    .sec-3 .right-content{
+        width: 100%;
+    }
+    /* footer영역 */
+    .footer-b .f-box{
+        margin: 0 30px;
+    }
+}
+@media (max-width:800px){
+
+    /* 배너영역 */
+    .menu{
+        display: none;
+    }
+    /* 햄버거버튼 */
+    .hamburger{
+        position: relative;
+        width: 30px;
+        height: 16px;
+    }
+    .hamburger,
+    .hamburger span{
+        display: block;
+        z-index: 999999;
+    }
+    .hamburger span{
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        top: 5px;
+        left: 10px;
+        background-color: #fff;
+        transition: 0.3s;
+    }
+    .hamburger span:nth-child(1){
+        top: 0;
+        left: 0;
+    }
+    .hamburger span:nth-child(2){
+        top: 10px;
+        left: 0;
+    }
+
+    /* .hamburger.active span:nth-child(1){
+        top: 50%;
+        transform: rotate(45deg);
+        background-color: #f5f5f5;
+    }
+    .hamburger.active span:nth-child(2){
+        top: 50%;
+        transform: rotate(-45deg);
+        background-color: #f5f5f5;
+    } */
+    .hamburger.active span{
+        background-color: #222;
+    }
+
+
+    /* sec-1 영역 */
+    .sec-1 .container{
+        width: 100%;
+    }
+    .sec-1 .img-box{
+        width: 100%;
+        height: auto;
+    }
+    .sec-1 .left-content .rotate-txt{
+        left: -15%;
+    }
+
+    /* sec-2 영역 */
+    .sec-2 .container{
+        flex-direction: column;
+        padding: 0 50px;
+    }
+    .sec-2 .l-sec{
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    .sec-2 .r-sec{
+        width: 100%;
+    }
+    .sec-2 .r-sec .img-sec{
+        width: 100%;
+        height: 100%;
+    } 
+    /* sec-3 영역 */
+    .sec-3 .left-content{
+        width: 100%;
+        height: 560px;
+    }
+
+    /* sec-4 영역 */
+    .sec-4 .container{
+        flex-direction: column;
+    }
+    .sec-4 .left-container{
+        width: 100%;
+    }
+    .sec-4 .right-container{
+        width: 100%;
+    }
+
+    /* 푸터영역 */
+    .footer-b .f-l-sec{
+        display: none;
+    }
+    .footer-b .f-r-sec{
+        display: none;
+    }
+
+
+        
+}
+@media (max-width:500px){
+    /* sec-3 영역 */
+    .sec-3{
+        margin-top: 50px;
+    }
+    .sec-3 .container{
+        padding: 0px 30px 220px 30px;
+    }
+    .sec-3 .title h1{
+        font-size: 2.75rem;
+    }
+    .sec-3 .left-content{
+        height: 370px;
+        width: 100%;
+    }
+
+    /* footer 영역 */
+    .footer-b .f-box .f-logo{
+        width: 65px;
+        height: 65px;
+    }
+}

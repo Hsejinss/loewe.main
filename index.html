@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css연결 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- js 연결 -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script src="./js/script.js"></script>
+    <title>LOEWE</title>
+</head>
+<body>
+    <div id="wrap">
+
+        <!-- 배너영역 -->
+        <section class="banner">
+            <div class="container">
+                <header class="header-area">
+
+                    <!-- 모바일/햄버거버튼 영역 -->
+                    <a href="#none" class="hamburger">
+                        <span></span>
+                        <span></span>
+                    </a>
+
+                    <div class="header-logo">
+                        <a href="#none">
+                            <svg class="ico-logo" xmlns="http://www.w3.org/2000/svg" xmlns:v="https://vecta.io/nano" viewBox="488 19.7 266 90.716">
+                                <path d="M476.27 96.857c-6.457 3.55-19.53 5.327-25.18 5.327h-9.685V30.192c.16-1.13.646-2.26 1.453-3.228l3.713-4.68a2.24 2.24 0 0 0 0-1.453h-25.02a2.24 2.24 0 0 0 0 1.453l3.713 4.68c.807.807 1.29 1.937 1.453 3.228v70.7c0 1.13-1.29 2.906-1.937 3.55l-3.4 3.067c-.16.646-.16 1.13 0 1.776H475.3l3.067-12.43a4.61 4.61 0 0 0-2.098 0z"/><path d="M566.825 63.12c-.646-23.244-18.563-43.42-43.098-43.42-6.618 0-13.236 1.453-19.2 4.358C488.86 31.806 477.4 49.078 477.4 66.5c0 24.535 20.177 43.905 43.098 43.905 5.972 0 11.783-.807 17.1-3.067 16.787-7.102 28.894-22.598 29.216-44.228zM507.1 30.03c27.602-5.488 45.358 14.205 45.358 37.772 0 12.6-5.488 25.665-16.303 33.736-25.988 3.713-43.744-14.043-43.744-38.9 0-12.752 4.197-24.858 14.7-32.606zM629.454 98.3c-5.327 2.583-20.823 3.874-26.472 3.874h-8.394V70.708h15.335l4.842 2.906c.646.16 1.13.16 1.776 0v-14.85c-.646-.16-1.13-.16-1.776 0l-5.004 2.098h-15.01v-32.93h21.8l11.622 2.583a3.97 3.97 0 0 0 1.937 0L628 20.83h-53.106a2.24 2.24 0 0 0 0 1.453l3.713 4.68c.807.807 1.3 1.937 1.453 3.228v70.7c0 1.13-1.3 2.906-2.098 3.55l-3.4 3.067c-.16.646-.16 1.13 0 1.776h53.913l3.067-10.976a4.61 4.61 0 0 0-2.098 0zm188.858 0c-5.327 2.583-20.823 3.874-26.472 3.874h-8.394V70.708h15.335l4.842 2.906c.646.16 1.13.16 1.776 0v-14.85c-.646-.16-1.13-.16-1.776 0l-5.004 2.098h-15.012v-32.93h21.8l11.622 2.583c.646.16 1.3.16 2.098 0l-2.098-9.685h-53.106a2.24 2.24 0 0 0 0 1.453l3.713 4.68c.807.807 1.3 1.937 1.453 3.228v70.7c0 1.13-1.3 2.906-1.937 3.55l-3.4 3.067c-.16.646-.16 1.13 0 1.776h53.913l3.067-10.976c-1.13-.16-1.776-.16-2.42 0zM757.62 20.83h-20.984a2.24 2.24 0 0 0 0 1.453l3.874 3.713c.807.807 1.776 1.937 1.453 3.067h0L723.4 86.688 704.836 21c-3.228-.323-6.457-.323-9.524 0l-22.275 65.535-15.335-56.82c-.323-.807-.16-1.776.323-2.583l4.358-4.68a2.24 2.24 0 0 0 0-1.453h-25.827a2.24 2.24 0 0 0 0 1.453l4.358 4.68c.646.807 1.13 1.614 1.453 2.583h0l22.114 79.578c1.13.323 7.748.323 9.2 0l22.275-66.342 19.37 66.342c3.067.323 6.134.323 9.04 0L750.194 31c.323-1.13.968-2.26 1.937-3.228l5.488-5.327c.16-.646.16-1.13 0-1.614z"/>
+                            </svg>
+                        </a>
+                    </div>
+    
+                    <!-- 아이콘영역 -->
+                    <ul class="icon-box">
+                        <li>
+                            <a href="#none">
+                                <svg class="header-ico ico-search" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M66.782 66.4336L54.3198 53.9714" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M13.5775 30.724C15.8197 22.3559 22.3559 15.8197 30.724 13.5775C39.092 11.3353 48.0206 13.7277 54.1464 19.8536C60.2723 25.9794 62.6647 34.908 60.4225 43.276C58.1802 51.6441 51.6441 58.1802 43.276 60.4225C34.908 62.6647 25.9794 60.2723 19.8536 54.1464C13.7277 48.0206 11.3353 39.092 13.5775 30.724Z" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>                            
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <svg class="header-ico ico-cart" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.7125 31.9162C17.8778 30.8148 18.8239 30 19.9376 30H60.0623C61.176 30 62.1222 30.8148 62.2874 31.9162L67.6124 67.4162C67.8165 68.7766 66.7629 70 65.3873 70H14.6126C13.2371 70 12.1835 68.7766 12.3875 67.4162L17.7125 31.9162Z" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M52 38V22C52 15.3726 46.6274 10 40 10C33.3726 10 28 15.3726 28 22V38" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>                            
+                            </a>
+                        </li>
+                    </ul>
+
+
+
+                </header>
+    
+                <!-- 메뉴영역 -->
+                <nav>
+                    <ul class="menu">
+                        <li>
+                            <a href="#none">WOMEN</a>
+                        </li>
+                        <li>
+                            <a href="#none">MEN</a>
+                        </li>
+                        <li>
+                            <a href="#none">WEAVE RESTORE RENEW</a>
+                        </li>
+                        <li>
+                            <a href="#none">SALE</a>
+                        </li>
+                        <li>
+                            <a href="#none">GIFTS</a>
+                        </li>
+                        <li>
+                            <a href="#none">CRAFT</a>
+                        </li>
+                        <li>
+                            <a href="#none">STORIES</a>
+                        </li>
+                    </ul>
+                </nav>
+    
+                <!-- 배너 슬라이더 영역 -->
+                <div class="mask swiper mySwiper">
+                    <div class="slider swiper-wrapper">
+                      <div class="in-slider fi swiper-slide"></div>
+                      <div class="in-slider se swiper-slide"></div>
+                      <div class="in-slider th swiper-slide"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- sec-1 영역 -->
+        <section class="sec-1">
+            <div class="container">
+                <div class="title" data-aos="fade-left" data-aos-offset="500" data-aos-duration="800">
+                    <h1>SS 2022 <br> Collection</h1>
+                </div>
+
+                <div class="left-content">
+                    <div class="t-box">
+                        <div class="img-box" data-aos="fade-right" data-aos-offset="500" data-aos-duration="800">
+                            <img src="./img/sec1-fi-img.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="b-box" data-aos="fade-right" data-aos-offset="500" data-aos-duration="700">
+                        <div class="img-box">
+                            <img src="./img/sec1-se-img.svg" alt="">
+                        </div>
+                        <div class="rotate-txt">
+                            <img src="./img/rotae-txt.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-content">
+                    <div class="t-box">
+                        <div class="img-box" data-aos="fade-left" data-aos-offset="500" data-aos-duration="800">
+                            <img src="./img/sec1-th-img.svg" alt="">
+                        </div>
+                    </div>
+                    
+                    <div class="b-box">
+                        <h2 class="m-txt">
+                            The playfulness of the <br>
+                            portraits highlights the spirit <br>
+                            of each character
+                        </h2>
+                        <p class="sub-txt">
+                            LOEWE's SS 2022 collection is a provocative fashion <br>
+                            explosion that marks a new starting point. <br>
+                            Ready-to-wear, bags and accessories make play with <br>
+                            sculptural outlines, sensual textures and psychedelic <br>
+                            colour. Discover LOEWE's exclusive and very limited <br>
+                            summer collection.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- sec-2 영역 -->
+        <section class="sec-2">
+
+            <div class="container">
+                <div class="l-sec">
+                    <div class="left-content">
+                        <div class="l-txt" data-aos="fade-up" data-aos-offset="500" data-aos-duration="800">
+                            <h2 class="m-txt">
+                                Ready for the summer <br>
+                                between craftsmanship and <br>
+                                objects of desire
+                            </h2>
+                            <p class="sub-txt">
+                                Playful styles to take you from day to night and season to season, <br> infused with
+                                sporty glamour, graphic patterns and vibrant colour-blocking.
+                            </p>
+                        </div>
+                        <div class="more-btn">
+                            <span>Explore the collection</span>
+                            <div class="arrow-btn">
+                                <img src="./img/ico-right.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                 
+                <div class="r-sec">
+                    <div class="img-sec">
+                        <img src="./img/LOEWE-Header.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- sec-3 영역 -->
+        <section class="sec-3">
+            <div class="container">
+                <div class="title">
+                    <h1>LOEWE ESSENTIAL 2022</h1>
+                </div>
+                <div class="con-box">
+                    <ul class="left-content">
+                        <li id="tab1" class="w-product pro-1 active"></li>
+                        <li id="tab2" class="w-product pro-2 "></li>
+                        <li id="tab3" class="w-product pro-3 "></li>
+                    </ul>
+    
+                    <div class="right-content">
+                        <div class="product">
+                            <div class="swiper firstSwiper">
+                                <div class="swiper-wrapper">
+                                  <div class="product-swiper swiper-slide">
+                                    <img data-alt="tab1" data-tab="tab4" data-image="./img/sec3-bg-pink.png" src="./img/sec-3-right-product1.png" alt="">
+                                  </div>
+                                  <div class="product-swiper swiper-slide">
+                                    <img data-alt="tab2" data-tab="tab5" data-image="./img/sec3-bg-green.png" src="./img/sec-3-right-product2.png" alt="">
+                                  </div>
+                                  <div class="product-swiper swiper-slide">
+                                    <img data-alt="tab3"  data-tab="tab6" data-image="./img/sec3-bg-beige.png" src="./img/sec-3-right-product3.png" alt="">
+                                  </div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
+                              </div>
+                        </div>
+    
+                        <div class="product-detail">
+
+
+
+                            <div class="detail-box">
+                                <div class="detail-txt fi-detail active" id="tab4">
+                                    <p class="p-name">Anagram devore sweater in wool</p>
+                                    <span class="price">$ 2,270.00</span>
+                        
+                                    <span class="button">
+                                        <a href="#none">SHOP NOW</a>
+                                    </span>
+                                </div>
+                                <div class="detail-txt se-detail" id="tab5">
+                                    <p class="p-name">Workwear jacket in cotton and linen</p>
+                                    <span class="price"> $ 2,200,00</span>
+                        
+                                    <span class="button">
+                                        <a href="#none">SHOP NOW</a>
+                                    </span>
+                                </div>
+                                <div class="detail-txt th-detail" id="tab6">
+                                    <p class="p-name">Large Anagram Basket bag in iraca palm and calfskin</p>
+                                    <span class="price">$ 1,300,00</span>
+                        
+                                    <span class="button">
+                                        <a href="#none">SHOP NOW</a>
+                                    </span>
+                                </div>
+                            </div>
+
+
+
+                            
+
+
+
+
+                            <!-- <div class="swiper detailSwiper">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide">
+                                    <div class="detail-txt fi-detail">
+                                        <p class="p-name">Anagram devore sweater in wool</p>
+                                        <span class="price">$ 2,270.00</span>
+                            
+                                        <span class="button">
+                                            <a href="#none">SHOP NOW</a>
+                                        </span>
+                                    </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="detail-txt se-detail">
+                                        <p class="p-name">Workwear jacket in cotton and linen</p>
+                                        <span class="price"> $ 2,200,00</span>
+                            
+                                        <span class="button">
+                                            <a href="#none">SHOP NOW</a>
+                                        </span>
+                                    </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="detail-txt th-detail">
+                                        <p class="p-name">Large Anagram Basket bag in iraca palm and calfskin</p>
+                                        <span class="price">$ 1,300,00</span>
+                            
+                                        <span class="button">
+                                            <a href="#none">SHOP NOW</a>
+                                        </span>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- sec-4 영역 -->
+        <section class="sec-4">
+            <div class="container">
+                <div class="left-container">
+                    <div class="product">
+                        <img src="./img/FW22_Editorial_RTW_25_Vertical_2250x3000.jpg" alt="loewe logo">
+                    </div>
+                </div>
+                <div class="right-container">
+                    <div class="product">
+                        <img src="./img/StillLife_FW22_19_FlamencoParrots_Vertical_2250x3000.jpg" alt="">
+                    </div>
+                    <div class="p-txt-box">
+                        <div class="txt-box">
+                            <p class="m-txt">Icons Reimagined</p>
+                            <p class="sub-txt">Say hello to new look Flamenco bags now <br>
+                                with doughnut chains, new shapes and colours and <br>
+                                a tropical parrot print
+                            </p>
+    
+                            <span>
+                                <a href="#none">Discover all</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </section>
+
+        <!-- footer 영역 -->
+        <section class="footer">
+            <div class="footer-t">
+                <div class="footer-t-i f-fi">
+                    <img src="./img/footer-skicky-img1.png" alt="">
+                </div>
+                <div class="footer-t-i f-se">
+                    <img src="./img/footer-skicky-img2.png" alt="">
+                </div>
+                <div class="footer-t-i f-th">
+                    <img src="./img/footer-skicky-img3.png" alt="">
+                </div>
+            </div>
+
+            <div class="footer-b">
+                <div class="f-box f-l-sec">
+                    <p>SUBSCRIBE TO NEWSLETTER</p>
+                    <form>
+                        <input type="search" placeholder="Email Address">
+                    </form>
+                </div>
+                <div class="f-box f-m-sec">
+                    <div class="f-logo">
+                        <img src="./img/Loewe_Anagram logo-Brandlogos.net.svg" alt="">
+                    </div>
+                    <div class="f-top">
+                        <p><a class="f-menu" href="#none">PRIVACY AND COOKIES</a></p>
+                        <p><a href="#none">TERMS & CONDITIONS</a></p>
+                    </div>
+                    <div class="f-bottom">
+                        <p>ⓒ2022 LOEWE. ALL RIGHTS RESERVED</p>
+                    </div>
+                </div>
+                <div class="f-box f-r-sec">
+                    <div class="f-left">
+                        <p>
+                            <a href="#none">ABOUT</a>
+                        </p>
+                        <p>
+                            <a href="#none">STORE</a>
+                        </p>
+                        <p>
+                            <a href="#none">MY LOEWE</a>
+                        </p>
+                    </div>
+                    <div class="f-right">
+                        <P>
+                            <a href="#none">FAQS</a>
+                        </P>
+                        <P>
+                            <a href="#none">CUSTOMER CARE</a>
+                        </P>
+                        <P>
+                            <a href="#none">INSTAGRAM</a>
+                        </P>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
