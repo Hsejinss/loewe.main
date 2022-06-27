@@ -518,7 +518,6 @@ nav{
 }
 
 /* 푸터영역 */
-
 .footer-t-i{
     position: sticky;
     top: 0;
@@ -820,6 +819,9 @@ nav{
         width: 100%;
         height: 100%;
     } 
+    .sec-2 .more-btn{
+        margin-top: 30px;
+    }
     /* sec-3 영역 */
     .sec-3 .left-content{
         width: 100%;
@@ -921,8 +923,16 @@ nav{
     .sec-2 .l-sec .left-content .l-txt{
         padding-top: 50px;
     }
-    .sec-2 .more-btn{
+    /* .sec-2 .more-btn{
         margin-top: 30px;
+    } */
+    .sec-2 .more-btn{
+        font-size: 0.875rem;
+    }
+    .sec-2 .more-btn .arrow-btn{
+        width: 30px;
+        height: 30px;
+        margin-left: 25px;
     }
     /* sec-3 영역 */
     .sec-3{
