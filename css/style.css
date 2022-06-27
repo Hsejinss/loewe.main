@@ -633,6 +633,10 @@ nav{
         align-items: center;
         flex-direction: column;
     }
+    .sec-1 .img-box{
+        width: 700px;
+        height: 860px;
+    }
     /* .sec-1 .container{
         
     } */
@@ -722,6 +726,9 @@ nav{
     .sec-3 .container{
         padding: 0px 120px 220px 120px;
     }
+    /* .sec-3 .product-detail .detail-box{
+        top: 140%;
+    } */
     .sec-3 .right-content .product-detail .detail-txt{
         top: 140%;
     }
@@ -743,9 +750,17 @@ nav{
 @media (max-width:800px){
 
     /* 배너영역 */
+    .header-area{
+        padding: 50px 30px;
+    }
+    .header-area .header-logo .ico-logo{
+        width: 160px;
+        height: 35px;
+    }
     .menu{
         display: none;
     }
+
     /* 햄버거버튼 */
     .hamburger{
         position: relative;
@@ -785,10 +800,9 @@ nav{
         transform: rotate(-45deg);
         background-color: #f5f5f5;
     } */
-    .hamburger.active span{
+    /* .hamburger.active span{
         background-color: #222;
-    }
-
+    } */
 
     /* sec-1 영역 */
     .sec-1 .container{
@@ -823,6 +837,9 @@ nav{
         width: 100%;
         height: 560px;
     }
+    .sec-3 .container{
+        padding: 0px 50px 220px 50px;
+    }
 
     /* sec-4 영역 */
     .sec-4 .container{
@@ -848,6 +865,9 @@ nav{
 }
 @media (max-width:500px){
     /* 베너영역 */
+    .header-area{
+        padding: 50px 30px;
+    }
     .hamburger, .hamburger span{
         display: block;
     }
@@ -855,12 +875,36 @@ nav{
         width: 24px;
         height: 24px;
     }
+    .icon-box{
+        margin-right: -15px;
+    }
+    .icon-box li{
+        margin-right: 15px;
+    }
+    /* sec-1 영역 */
+    .sec-1 .right-content .b-box .m-txt{
+        font-size: 2rem ;
+    }
+    .sec-1 .right-content .b-box .sub-txt{
+        font-size: 1.1rem;
+    }
+    /* .sec-1 .right-content .m-txt br,
+    .sec-1 .right-content .sub-txt br{
+        display: none;
+    } */
+    /* sec-2 영역 */
+    .sec-2 .l-sec .left-content .l-txt{
+        padding-top: 50px;
+    }
+    .sec-2 .more-btn{
+        margin-top: 30px;
+    }
     /* sec-3 영역 */
     .sec-3{
         margin-top: 50px;
     }
     .sec-3 .container{
-        padding: 0px 30px 220px 30px;
+        padding: 0px 50px 220px 50px;
     }
     .sec-3 .title h1{
         font-size: 2.75rem;
@@ -872,7 +916,11 @@ nav{
 
     /* footer 영역 */
     .footer-b .f-box .f-logo{
-        width: 65px;
-        height: 65px;
+        width: 55px;
+        height: 55px;
+    }
+    .footer-b{
+        font-size: 0.75rem;
+        margin-top: 100px;
     }
 }
