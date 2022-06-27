@@ -726,11 +726,8 @@ nav{
     .sec-3 .container{
         padding: 0px 120px 220px 120px;
     }
-    /* .sec-3 .product-detail .detail-box{
-        top: 140%;
-    } */
-    .sec-3 .right-content .product-detail .detail-txt{
-        top: 140%;
+    .sec-3 .product-detail{
+        top: 105%;
     }
     .sec-3 .con-box{
         flex-direction: column;
@@ -742,6 +739,7 @@ nav{
     .sec-3 .right-content{
         width: 100%;
     }
+
     /* footer영역 */
     .footer-b .f-box{
         margin: 0 30px;
@@ -839,6 +837,12 @@ nav{
     }
     .sec-3 .container{
         padding: 0px 50px 220px 50px;
+    }
+    .sec-3 .product-detail{
+        top: 110%;
+    }
+    .sec-3 .right-content .product-detail .detail-txt{
+        top: -80px;
     }
 
     /* sec-4 영역 */
