@@ -14,13 +14,13 @@ $(document).ready(function(){
       $('.header-area').addClass('active');
       $('.header-area .header-logo .ico-logo').addClass('active');
       $('.icon-box li .header-ico').addClass('active');
-      $('.hamburger').addClass('active');
+      // $('.hamburger').addClass('active');
 
     }else{
       $('.header-area').removeClass('active');
       $('.header-area .header-logo .ico-logo').removeClass('active');
       $('.icon-box li .header-ico').removeClass('active');
-      $('.hamburger').removeClass('active');
+      // $('.hamburger').removeClass('active');
     }
   });
   
