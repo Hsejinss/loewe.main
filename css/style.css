@@ -847,6 +847,14 @@ nav{
         
 }
 @media (max-width:500px){
+    /* 베너영역 */
+    .hamburger, .hamburger span{
+        display: block;
+    }
+    .icon-box a svg{
+        width: 24px;
+        height: 24px;
+    }
     /* sec-3 영역 */
     .sec-3{
         margin-top: 50px;
