@@ -9,8 +9,8 @@ $(document).ready(function(){
 
     // console.log(h);
 
-    // scrollTop: >= 900
-    if($(window).scrollTop() > 900){
+    // scrollTop: >= 800
+    if($(window).scrollTop() > 800){
       $('.header-area').addClass('active');
       $('.header-area .header-logo .ico-logo').addClass('active');
       $('.icon-box li .header-ico').addClass('active');
