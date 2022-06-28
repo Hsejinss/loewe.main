@@ -145,6 +145,14 @@ nav{
     background-size: cover;
     background-position: center;
 }
+.slider .in-slider.fo{
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/LOEWE_SS23_MENS_SHOW_STILL_LIFE_RGB_CROPPED_2880X1620_12.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 .swiper, .swiper-wrapper{
     z-index: 0 !important;
 }
@@ -899,16 +907,22 @@ nav{
 }
 @media (max-width:500px){
     /* 베너영역 */
+    .banner{
+        height: 100%;
+        width: 100%;
+    }
+    .mask{
+        height: 90vh;
+    }
     .m-bg{
         display: block;
     }
     .mask .slider .in-slider.fi,
     .mask .slider .in-slider.se,
-    .mask .slider .in-slider.th{
+    .mask .slider .in-slider.th,
+    .mask .slider .in-slider.fo{
         display: none;
     }
-    /* 스와이퍼를 display:none */
-     /* 감춰놨던 사진을 dis: block */
     .title h1{
         font-size: 3.75rem;
     }
