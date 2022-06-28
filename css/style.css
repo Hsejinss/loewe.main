@@ -333,13 +333,14 @@ nav{
 /* left영역 */
 .sec-3 .left-content{
     width: 40%;
-    height: 790px;
+    /* height: 790px; */
     position: relative;
 }
 .sec-3 .con-box .left-content li{
     width: 100%;
-    height: 100%;
-    position: absolute;
+    /* height: 100%; */
+    height: 790px;
+    /* position: absolute; */
 
     display: none;
     transition: 0.5s;
@@ -348,7 +349,7 @@ nav{
     display: block;
 }
 .sec-3 .left-content .w-product{
-    position: absolute;
+    position: static;
     display: block;
 }
 
@@ -429,7 +430,7 @@ nav{
 }
 
 .sec-3 .product-detail{
-    position: absolute;
+    /* position: absolute; */
     height: 150px;
     width: 100%;
     bottom: 50px;
@@ -437,7 +438,7 @@ nav{
 .sec-3 .product-detail .detail-box{
     width: 100%;
     height: 100%;
-    position: absolute;
+    /* position: absolute; */
     /* display: none; */
     /* display: block; */
     transition: 0.3s;
@@ -446,14 +447,9 @@ nav{
     display: block;
 }
 .sec-3 .product-detail .detail-txt{
-    position: absolute;
+    /* position: absolute; */
     display: none;
 }
-
-
-
-
-
 
 /* 스와이퍼 버튼 초기화 */
 .swiper-button-prev::after, .swiper-rtl .swiper-button-next::after,
@@ -588,11 +584,6 @@ nav{
 }
 
 
-
-
-
-
-
 /* 미디어쿼리적용 */
 @media (max-width: 1800px){
     /* sec-1영역 */
@@ -622,8 +613,13 @@ nav{
         left: 55%;
     }
     /* sec-3영역 */
-    .sec-3 .right-content .product-detail .detail-txt{
+    /* .sec-3 .right-content .product-detail .detail-txt{
         top: 0%;
+    } */
+    /* 푸터영역 */
+    .footer .footer-t-i{
+        height: 100vh;
+        width: 100%;
     }
 } 
 @media (max-width: 1300px){
@@ -710,9 +706,9 @@ nav{
     .sec-3 .left-content{
         margin-right: 50px;
     }
-    .sec-3 .right-content .product-detail .detail-txt{
+    /* .sec-3 .right-content .product-detail .detail-txt{
         top: -30%;
-    }
+    } */
 } 
 
 @media (max-width:1200px){
@@ -736,7 +732,7 @@ nav{
     }
     .sec-3 .left-content{
         width: 100%;
-        height: 600px;
+        /* height: 600px; */
     }
     .sec-3 .right-content{
         width: 100%;
@@ -746,6 +742,12 @@ nav{
     .footer-b .f-box{
         margin: 0 30px;
     }
+    .footer .footer-t-i{
+        position: static;
+        width: 100%;
+        height: 100%;
+    }
+
 }
 @media (max-width:800px){
 
@@ -804,6 +806,9 @@ nav{
     }
 
     /* sec-2 영역 */
+    .sec-2{
+        background-position: -400px -90px;
+    }
     .sec-2 .container{
         flex-direction: column;
         padding: 0 50px;
@@ -825,19 +830,22 @@ nav{
     /* sec-3 영역 */
     .sec-3 .left-content{
         width: 100%;
-        height: 560px;
+        /* height: 560px; */
     }
     .sec-3 .container{
-        padding: 0px 50px 220px 50px;
+        padding: 50px 50px 0 50px;
     }
-    .sec-3 .product-detail{
+    /* .sec-3 .product-detail{
         top: 110%;
-    }
-    .sec-3 .right-content .product-detail .detail-txt{
+    } */
+    /* .sec-3 .right-content .product-detail .detail-txt{
         top: -50px;
-    }
+    } */
 
     /* sec-4 영역 */
+    .sec-4 {
+        margin-top: 50px;
+    }
     .sec-4 .container{
         flex-direction: column;
     }
@@ -866,6 +874,9 @@ nav{
         display: none;
     }
     /* sec-2 영역 */
+    .sec-2{
+        background-position: -350px -110px;
+    }
     .sec-2 .l-sec .left-content .m-txt{
         font: 2rem;
     }
@@ -920,6 +931,9 @@ nav{
         display: none;
     } */
     /* sec-2 영역 */
+    .sec-2{
+        background-position: -300px -150px;
+    }
     .sec-2 .l-sec .left-content .l-txt{
         padding-top: 50px;
     }
@@ -939,14 +953,17 @@ nav{
         margin-top: 50px;
     }
     .sec-3 .container{
-        padding: 0px 50px 220px 50px;
+        padding: 0px 50px 0px 50px;
     }
     .sec-3 .title h1{
         font-size: 2.75rem;
     }
     .sec-3 .left-content{
-        height: 370px;
+        height: 100%;
         width: 100%;
+    }
+    .sec-3 .con-box .left-content li{
+        height: 370px;
     }
 
     /* sec-4 영역 */
