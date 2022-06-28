@@ -635,17 +635,18 @@ nav{
         width: 700px;
         height: 860px;
     }
-    /* .sec-1 .container{
-        
-    } */
+    .sec-1 .title{
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 20%;
+        box-sizing: border-box;
+    }
     .sec-1 .container{
         width: 100%;
     }
     .sec-1 .img-box{
         width: 100%;
         height: auto;
-
-
         width: 800px;
         height: auto;
         margin: 0 auto;
@@ -657,9 +658,6 @@ nav{
     .sec-1 .title{
         width: 100%;
         margin-left: 0;
-        /* display: flex;
-        justify-content: center;
-        align-items: center; */
     }
     .title h1{
         font-size: 4.25rem;
@@ -715,7 +713,9 @@ nav{
     /* sec-1 영역 */
     .sec-1 .title{
         margin-bottom: 30px;
+        padding-left: 15%;
     }
+
     /* sec-2 영역 */
     .sec-2 .l-sec .left-content .l-txt{
         margin-right: 15px;
@@ -747,7 +747,11 @@ nav{
         width: 100%;
         height: 100%;
     }
-
+}
+@media(max-width: 1000px){
+    .sec-1 .title{
+        padding-left: 10%;
+    }
 }
 @media (max-width:800px){
 
@@ -803,6 +807,9 @@ nav{
     }
     .sec-1 .left-content .rotate-txt{
         left: -15%;
+    }
+    .sec-1 .title{
+        padding-left: 5%;
     }
 
     /* sec-2 영역 */
@@ -873,6 +880,9 @@ nav{
     .sec-1 .right-content .b-box .sub-txt br{
         display: none;
     }
+    .sec-1 .title{
+        padding-left: 0;
+    }
     /* sec-2 영역 */
     .sec-2{
         background-position: -350px -110px;
@@ -920,6 +930,9 @@ nav{
         margin-right: 15px;
     }
     /* sec-1 영역 */
+    .sec-1{
+        padding: 80px 50px 150px;
+    }
     .sec-1 .right-content .b-box .m-txt{
         font-size: 2rem ;
     }
